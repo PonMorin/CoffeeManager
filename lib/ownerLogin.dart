@@ -74,10 +74,13 @@ class _OwnerLoginState extends State<OwnerLogin> {
                                   border: InputBorder.none),
 
                                validator: (String input){
-
                                if(input.isEmpty){
 
                                 return "Enter Email";
+                              }
+                              
+                              if(input != "ponmay2546@gmail.com"){
+                                return "wrong user";
                               }
                                 return null;
                               }
@@ -108,6 +111,10 @@ class _OwnerLoginState extends State<OwnerLogin> {
                               validator: (String val){
                                 if(val.isEmpty){
                                 return("Enter password");
+                              }
+
+                              if(val != "helloworld"){
+                                return "wrong password";
                               }
                                 return null;
                               }

@@ -142,7 +142,7 @@ class _OwnerMenuState extends State<OwnerMenu> {
                               children:[
                             
                               Padding(padding: EdgeInsets.only(left:20.0),
-                                child: Text("Total:${list[index].data()["Total"]}",
+                                child: Text("Total:${list[index].data()["User"]}",
                                           style: TextStyle(color: Color(0xff623B28),
                                           fontWeight: FontWeight.bold, fontSize: 16.0)),
                               ), 
